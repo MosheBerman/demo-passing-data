@@ -26,10 +26,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    NSLog(@"Logging strings:");
+    NSLog(@"Logging enhancers in strings:");
     [self logDataSourceWithStrings];
     
-    NSLog(@"Logging Arrays:");
+    NSLog(@"\n\nLogging enhancers in array:");
     [self logDataSourceWithArray];
 }
 
@@ -43,7 +43,7 @@
 - (void)logDataSourceWithArray {
 
     for (NSInteger i = 0; i < self.dataSource.enhancers.count; i++) {
-        NSLog(@"Enhancer %i: %@", i, self.dataSource.enhancers);
+        NSLog(@"Enhancer %i: %@", i, self.dataSource.enhancers[i]);
     }
 }
 
