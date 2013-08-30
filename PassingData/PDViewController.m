@@ -24,6 +24,15 @@
     [self setDataSource:[[PDDataSource alloc] init]];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    NSLog(@"Logging strings:");
+    [self logDataSourceWithStrings];
+    
+    NSLog(@"Logging Arrays:");
+    [self logDataSourceWithArray];
+}
+
 - (void)logDataSourceWithStrings {
     
     NSLog(@"Energy enhancer 1: %@", self.dataSource.energyEnhancer);
